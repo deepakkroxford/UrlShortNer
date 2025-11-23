@@ -19,6 +19,7 @@ connectDatabase();
 app.use(express.json());
 app.use(cors({
   origin: [
+    "*",
     "http://localhost:5173",       // local frontend
     "https://url-short-ner-eta.vercel.app"  // deployed frontend
   ],
