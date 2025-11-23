@@ -27,7 +27,7 @@ export default function Stats() {
     return <p className="p-6 text-red-500 text-xl">404 — Link not found</p>;
 
   // Short URL (backend redirect)
-  const shortUrl = `http://localhost:9000/${code}`;
+  const shortUrl = `https://urlshortner-v030.onrender.com/${code}`;
 
   return (
     <div className="p-6 max-w-xl mx-auto">

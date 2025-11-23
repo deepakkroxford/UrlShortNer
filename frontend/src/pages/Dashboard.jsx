@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   const [copied, setCopied] = useState(null);
 
-  const backendBase = "http://localhost:9000";
+  const backendBase = "https://urlshortner-v030.onrender.com";
 
   const fetchLinks = async () => {
     try {

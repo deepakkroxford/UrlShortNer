@@ -17,7 +17,14 @@ connectDatabase();
 
 // Middleware to parse JSON requests
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",       // local frontend
+    "https://url-short-ner-eta.vercel.app"  // deployed frontend
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(morgan('dev'));
 
 // Healthcheck

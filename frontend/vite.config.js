@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:9000",
+        target: "https://urlshortner-v030.onrender.com",
         changeOrigin: true,
         secure: false
       }
